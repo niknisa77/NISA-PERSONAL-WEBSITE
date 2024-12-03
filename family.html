@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family - NISA Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Basic styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f7c6d9, #ffecd2);
+            color: #2c3e50;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure full height */
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        nav a:hover::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background-color: #ff6f61;
+            transition: width 0.3s ease;
+            width: 100%;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff6f61, #56ccf2);
+            padding: 20px 0;
+            border-bottom: 3px solid #56ccf2;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: white;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Family Member Styles */
+        .family-member {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .family-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .family-member img {
+            border-radius: 50%;
+            width: 150px; /* Adjusted size */
+            height: 150px; /* Adjusted size */
+            margin-right: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .family-info {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .family-info h3 {
+            margin: 0;
+            font-size: 24px;
+            color: #2c3e50;
+        }
+
+        .family-info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        /* Family Picture and Quote */
+        .family-picture {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .family-picture img {
+            width: 40%; /* Adjusted size */
+            max-width: 400px; /* Adjusted size */
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            border: 12px solid rgba(255, 255, 255, 0.6); /* Soft border */
+            padding: 15px;
+        }
+
+        .quote {
+            font-size: 20px;
+            font-style: italic;
+            color: #2c3e50;
+            margin-top: 20px;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 18px;
+                margin: 0 15px;
+            }
+
+            .family-member {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .family-member img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .family-picture img {
+                width: 60%; /* Make image bigger on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .family-info {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="biodata.html"><i class="fas fa-user"></i> Biodata</a>
+        <a href="gallery.html"><i class="fas fa-image"></i> Gallery</a>
+        <a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="family.html"><i class="fas fa-users"></i> Family</a>
+        <a href="favoritemovie.html"><i class="fas fa-film"></i> Favorite Movie</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>WELCOME TO MY FAMILY</h1>
+    </header>
+
+    <!-- Family Section -->
+    <div class="family-member">
+        <img src="fam10.jpg" alt="Nik Razak">
+        <div class="family-info">
+            <h3>NIK ABD RAZAK BIN NIK LAZIM</h3>
+            <p><strong>Role:</strong> Father</p>
+            <p><strong>Age:</strong> 48</p>
+            <p><strong>Hobby:</strong> Plant a tree</p>
+        </div>
+    </div>
+
+    <div class="family-member">
+        <img src="fam10.jpg" alt="Junaidah Razak">
+        <div class="family-info">
+            <h3>JUNAIDAH BINTI RAZAK</h3>
+            <p><strong>Role:</strong> Mother</p>
+            <p><strong>Age:</strong> 47</p>
+            <p><strong>Hobby:</strong> Cooking</p>
+        </div>
+    </div>
+
+    <div class="family-member">
+        <img src="nisa2.jpg" alt="Nisa">
+        <div class="family-info">
+            <h3>NIK NUR AINUN NISA' BT NIK ABD RAZAK</h3>
+            <p><strong>Role:</strong> Myself</p>
+            <p><strong>Age:</strong> 20</p>
+            <p><strong>Hobby:</strong> Listening to Music</p>
+        </div>
+    </div>
+
+    <div class="family-member">
+        <img src="fam5.jpg" alt="Hakim">
+        <div class="family-info">
+            <h3>NIK MUHAMMAD DANIAL HAKIM BIN NIK ABD RAZAK</h3>
+            <p><strong>Role:</strong> Brother</p>
+            <p><strong>Age:</strong> 17</p>
+            <p><strong>Hobby:</strong> Gaming</p>
+        </div>
+    </div>
+
+    <div class="family-member">
+        <img src="fam7.jpg" alt="Damia">
+        <div class="family-info">
+            <h3>NIK NUR DAMIA DANISHA BINTI NIK ABD RAZAK</h3>
+            <p><strong>Role:</strong> Sister</p>
+            <p><strong>Age:</strong> 12</p>
+            <p><strong>Hobby:</strong> Gaming</p>
+        </div>
+    </div>
+
+    <!-- Family Picture and Quote -->
+    <div class="family-picture">
+        <img src="f10.jpg" alt="Family Picture">
+        <p class="quote">"Together we laugh, we love, and we grow."</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NISA , All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

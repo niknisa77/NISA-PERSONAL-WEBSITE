@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - NISA Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #f7c6d9, #ffecd2);
+            color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        nav a:hover::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 3px;
+            background-color: #ff6f61;
+            transition: width 0.3s ease;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff6f61, #56ccf2);
+            padding: 30px 0;
+            border-bottom: 3px solid #56ccf2;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: white;
+            margin: 10px 0;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+        }
+
+        /* Experience Content */
+        .content {
+            padding: 30px;
+            margin: 30px auto;
+            width: 95%;
+            max-width: 1000px;
+            color: black;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .content h2, .content h3 {
+            margin-top: 30px;
+            font-size: 1.5em;
+            color: #2c3e50;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Memories Section */
+        .memories {
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 900px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .memories h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .memories-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+            .content {
+                width: 95%;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="biodata.html"><i class="fas fa-user"></i> Biodata</a>
+        <a href="gallery.html"><i class="fas fa-image"></i> Gallery</a>
+        <a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="family.html"><i class="fas fa-users"></i> Family</a>
+        <a href="favoritemovie.html"><i class="fas fa-film"></i> Favorite Movie</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>WELCOME TO MY EXPERIENCE</h1>
+    </header>
+
+ 
+
+    <!-- Experience Content -->
+    <div class="content">
+        <h2>My Internship Experience at PEJABAT PENDIDIKAN DAERAH SEBERANG PRAI TENGAH</h2>
+
+        <h3>Internship Duration:</h3>
+        <p>My internship at the Seberang Prai Tengah District Education Office, Pulau Pinang has lasted from 22 July 2024 to 13 September 2024, which is a period of 2 months. During this time, I had the opportunity to learn many new things and gain practical skills related to educational technology, social media management, and program coordination.</p>
+
+ <h3>Tools and Platforms Used:</h3>
+<ol>
+    <li>CapCut and Canva for video editing and graphic design.</li>
+    <li>Microsoft Word for creating reports and meeting minutes.</li>
+    <li>TikTok and YouTube for social media management and promotion.</li>
+</ol>
+
+        <h3>Tasks and Experience:</h3>
+        <ul>
+            <li><strong>Managing PPDSPT's TikTok Account:</strong> I was responsible for managing PPDSPT's TikTok account, including creating and editing videos about the activities carried out by the staff. I always made sure that the videos posted were engaging and aligned with PPDSPT's objectives.</li>
+            <li><strong>Creating Meeting Minutes:</strong> I was also involved in preparing meeting minutes for the meetings held at PPDSPT. This experience helped me learn how to professionally record discussions and organize information clearly.</li>
+            <li><strong>Designing Certificates:</strong> I helped create frames for the certificate envelopes and stickers for the certificates of appreciation that were given to the students. I learned how to ensure that the design was neat and appropriate for formal events.</li>
+            <li><strong>Assisting in Award Ceremonies (Dulang Girl):</strong> I participated as a dulang girl during award ceremonies. My role was to ensure that the ceremony went smoothly and to support the presentation of awards to the recipients.</li>
+            <li><strong>Photography and Videography for PPDSPT Programs:</strong> I was tasked with capturing photos and videos during PPDSPT events. I also edited videos for documentation and program promotion.</li>
+        </ul>
+
+<h3>Skills Gained:</h3>
+<ul style="list-style: none; padding: 0;">
+    <li style="margin-bottom: 10px;">
+        <span style="color: #ff6f61; font-weight: bold;">✔</span> 
+        <strong>Video and Image Editing:</strong> I mastered the skills of creating montage videos and editing images using tools like CapCut and Canva. This allowed me to be more creative in producing visual content.
+    </li>
+    <li style="margin-bottom: 10px;">
+        <span style="color: #4caf50; font-weight: bold;">✔</span> 
+        <strong>Communication Skills:</strong> Throughout my internship, I improved my communication skills by interacting with staff and colleagues at PPDSPT. I learned to effectively understand their needs and convey information clearly.
+    </li>
+    <li style="margin-bottom: 10px;">
+        <span style="color: #2196f3; font-weight: bold;">✔</span> 
+        <strong>Time Management:</strong> With so many tasks to complete, I developed better time management skills and ensured that each task was completed on time without compromising quality.
+    </li>
+</ul>
+
+ <h2>Acknowledgements and Gratitude</h2>
+        <p>I would like to express my deepest gratitude to all the staff and officers at the Seberang Perai Tengah District Education Office (PPDSPT) for giving me the opportunity to complete my internship here. I would like to specially thank:</p>
+        <ul>
+            <li>Puan Nuradillah, who provided guidance and support throughout my internship.</li>
+            <li>Encik Samad, who was always available to offer advice and guidance on the tasks I undertook.</li>
+            <li>Encik Dazrin, who gave me the opportunity to develop my technical skills through various projects.</li>
+        </ul>
+        <p>The experience and knowledge I gained here have been invaluable, and they have made a significant impact on my personal growth. I am very thankful to everyone who supported and mentored me throughout my internship journey. I will carry all the lessons learned here into my future career and life.</p>
+        <p>Once again, thank you to everyone at PPDSPT, especially the Learning Sector - USTP Unit, for allowing me to be part of this amazing team. I truly appreciate all the help, support, and opportunities provided. I hope PPDSPT continues to thrive and make a positive impact on education in this district.</p>   <p>This experience has not only enhanced my skills but also taught me the importance of teamwork and professionalism in the workplace. I will carry these lessons with me into my future career.</p>
+    </div>
+
+
+<!-- Memories Section -->
+<div class="memories">
+    <h2>MEMORIES</h2>
+    <div class="memories-content">
+        <div class="gallery">
+ 
+            <img src="k7.jpg" alt="Memory 3">
+            <img src="k8.jpg" alt="Memory 4">
+            <img src="k9.jpg" alt="Memory 5">
+  
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NISA , All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>

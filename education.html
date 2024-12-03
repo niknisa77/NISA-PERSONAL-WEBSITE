@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - NISA Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Basic styles */
+       body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f7c6d9, #ffecd2);
+            color: #2c3e50;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure full height */
+        }
+
+
+        /* Navigation */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        nav a:hover::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background-color: #ff6f61;
+            transition: width 0.3s ease;
+            width: 100%;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff6f61, #56ccf2);
+            padding: 20px 0;
+            border-bottom: 3px solid #56ccf2;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: white;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+        }
+
+        /* Content Section */
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        /* School Box */
+        .box {
+            width: 80%;
+            max-width: 1000px;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .box img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .school-name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .box .years {
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .achievement-title {
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 24px;
+            color: #34495e;
+            text-decoration: underline;
+        }
+
+        .achievement-table {
+            width: 100%;
+            margin: 10px 0;
+            border-collapse: collapse;
+        }
+
+        .achievement-table th,
+        .achievement-table td {
+            border: 1px solid #bdc3c7;
+            padding: 12px;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .achievement-table th {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        /* Memories Section */
+        .memories {
+            margin-top: 20px;
+        }
+
+        .memories img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Footer (Copyright Bar) */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="biodata.html"><i class="fas fa-user"></i> Biodata</a>
+        <a href="gallery.html"><i class="fas fa-image"></i> Gallery</a>
+        <a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="family.html"><i class="fas fa-users"></i> Family</a>
+        <a href="favoritemovie.html"><i class="fas fa-film"></i> Favorite Movie</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>WELCOME TO MY EDUCATION</h1>
+    </header>
+
+    <!-- Content Section -->
+    <div class="content">
+        <!-- School Section Box for SK -->
+        <div class="box">
+            <div class="school-name">SEKOLAH KEBANGSAAN PERMAI INDAH</div>
+            <img src="sklogo.jpg" alt="Sekolah Logo">
+            <p class="years">2011-2016</p>
+            <p class="achievement-title">MY ACHIEVEMENTS</p>
+            <table class="achievement-table">
+                <tr>
+                    <th>Year</th>
+                    <th>Achievement</th>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td>Nationwide Running Event: 1 Student, 1 Sport, 1 Malaysia</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>Third Place in Choral Speaking at District Level</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>Nilam Award Recipient at School Level</td>
+                </tr>
+            </table>
+
+            <!-- Memories Section (Image Below Table) -->
+            <h2>MEMORIES</h2>
+            <div class="memories">
+                <img src="skg1.jpg" alt="Class Photo - Standard 5">
+                <p class="memories-description">Class photo during Standard 5.</p>
+            </div>
+        </div>
+
+        <!-- School Section Box for SMK Permai Indah -->
+        <div class="box">
+            <div class="school-name">SEKOLAH MENENGAH KEBANGSAAN PERMAI INDAH</div>
+            <img src="smklogo.jpg" alt="SMK Permai Indah Logo">
+            <p class="years">2017-2021</p>
+            <p class="achievement-title">MY ACHIEVEMENTS AND AWARDS</p>
+            <table class="achievement-table">
+                <tr>
+                    <th>Year</th>
+                    <th>Achievement</th>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>Qasidah Competition District Level</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>Toyota Eco Youth Competition National Level</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Cadet Corp Marching Competition (Naib Johan at District Level)</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Merdeka Quiz Competition (Consolation Prize)</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Reading Yasin at National Level</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Best Personality Award</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Chairperson of Hockey Club SMKPI</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Chief Supervisors of SMKPI</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Chairperson of ICT Club SMKPI</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Chairperson of SMKPI Girl Guides Association</td>
+                </tr>
+            </table>
+
+       <!-- Memories Section (Image Below Table) -->
+<h2>MEMORIES</h2>
+<div class="memories" style="text-align: center;">
+    <img src="smk2.jpg" alt="Marching Competition" style="width: 70%; max-width: 600px;">
+    <p class="memories-description" style="font-size: 18px;">Marching Competition</p>
+</div>
+
+<div class="memories" style="text-align: center;">
+    <img src="smk4.jpg" alt="Top 10 Outstanding SPM Results" style="width: 70%; max-width: 600px;">
+    <p class="memories-description" style="font-size: 18px;">Top 10 Outstanding SPM Results</p>
+</div>
+
+<div class="memories" style="text-align: center;">
+    <img src="smk5.jpg" alt="Class Photo with all students at SMK Permai Indah" style="width: 70%; max-width: 600px;">
+    <p class="memories-description" style="font-size: 18px;">Photo with all the students at SMK Permai Indah</p>
+</div>
+
+<div class="memories" style="text-align: center;">
+    <img src="smk6.jpg" alt="With my best friend, Farah" style="width: 30%; max-width: 300px;">
+    <p class="memories-description" style="font-size: 18px;">The one and only with my best friend, Farah</p>
+</div>
+</div>
+<!-- School Section Box for UiTM Kedah -->
+<div class="box">
+    <div class="school-name">UNIVERSITI TEKNOLOGI MARA </div>
+    <img src="logouitmkedah.jpg" alt="UiTM Kedah Logo" style="width: 250px;">
+
+    <p class="years">2022- Until Now</p>
+    <p class="achievement-title">MY ACHIEVEMENTS</p>
+    <table class="achievement-table">
+        <tr>
+            <th>Year</th>
+            <th>Achievement</th>
+        </tr>
+        <tr>
+            <td>2023</td>
+            <td>Archaeological participation in Lembah Bujang</td>
+        </tr>
+        <tr>
+            <td>2024</td>
+            <td>Receiving an award at Sungai Batu archaeological complex</td>
+        </tr>
+        <tr>
+            <td>2024</td>
+            <td>Tadarus Al-Quran program</td>
+        </tr>
+        <tr>
+            <td>2024</td>
+            <td>Director of the Sulam program</td>
+        </tr>
+    </table>
+
+    <h2>MEMORIES</h2>
+    <div class="memories" style="text-align: center;">
+        <img src="uni1.jpg" alt="Dinner" style="width: 50%; max-width: 600px;">
+        <p class="memories-description" style="font-size: 18px;">Eid dinner</p>
+    </div>
+
+    <div class="memories" style="text-align: center;">
+        <img src="uni2.jpg" alt="Class Photo" style="width: 30%; max-width: 400px;">
+        <p class="memories-description" style="font-size: 18px;">Friend</p>
+    </div>
+
+    <div class="memories" style="text-align: center;">
+        <img src="uni6.jpg" alt="Class photo" style="width: 40%; max-width: 500px;">
+        <p class="memories-description" style="font-size: 18px;">Class photo of KCDIM1105D</p>
+    </div>
+
+
+</div>
+<!-- End of Journey -->
+<div style="text-align: center; margin: 40px 0;">
+    <p style="font-style: italic; font-size: 20px; color: #2c3e50; line-height: 1.8; max-width: 800px; margin: 0 auto; padding-bottom: 30px;">
+        "As a leader, I’ve encountered many lessons along the way. <br>
+        My journey is never truly complete. <br>
+        With each new opportunity, I embrace learning and growth, <br>
+        continuously evolving to meet the demands of today and tomorrow. <br>
+        I stand ready to face future challenges, equipped not only with the knowledge of today but with the wisdom and resilience cultivated through each experience." 
+       
+    </p>
+</div>
+
+
+
+    <!-- Footer (Copyright Bar) -->
+    <footer>
+        <p>&copy; 2024 NISA , All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

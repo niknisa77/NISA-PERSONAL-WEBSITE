@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - NISA Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Basic styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f7c6d9, #ffecd2);
+            color: #2c3e50;
+            text-align: center;
+            transition: background-color 0.5s ease;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        nav a:hover::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background-color: #ff6f61;
+            transition: width 0.3s ease;
+            width: 100%;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff6f61, #56ccf2);
+            padding: 20px 0;
+            border-bottom: 3px solid #56ccf2;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: white;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+        }
+
+        /* Gallery Section */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img,
+        .gallery-item video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover img,
+        .gallery-item:hover video {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #34495e;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover p {
+            opacity: 1;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        footer.visible {
+            opacity: 1;
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            .gallery-item {
+                width: 45%;
+            }
+
+            .gallery-container {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .gallery-item {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="biodata.html"><i class="fas fa-user"></i> Biodata</a>
+        <a href="gallery.html"><i class="fas fa-image"></i> Gallery</a>
+        <a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="family.html"><i class="fas fa-users"></i> Family</a>
+        <a href="favoritemovie.html"><i class="fas fa-film"></i> Favorite Movie</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>WELCOME TO MY GALLERY</h1>
+    </header>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="nisa1.jpg" alt="At beach Esen">
+            <p>At beach Esen, Pulau Pinang</p>
+        </div>
+        <div class="gallery-item">
+            <img src="nisa2.jpg" alt="At beach Pulau Pangkor">
+            <p>At beach Pulau Pangkor</p>
+        </div>
+        <div class="gallery-item">
+            <img src="nisa3.jpg" alt="At beach Pasir Panjang">
+            <p>At beach Pasir Panjang, Pulau Pinang</p>
+        </div>
+        <div class="gallery-item">
+            <img src="nisa4.jpg" alt="After the coding class">
+            <p>After the coding class</p>
+        </div>
+        <div class="gallery-item">
+            <img src="nisa5.jpg" alt="Top 10 result SPM">
+            <p>Top 10 result SPM</p>
+        </div>
+        <div class="gallery-item">
+            <img src="nisa6.jpg" alt="Present">
+            <p>Present</p>
+        </div>
+        <div class="gallery-item">
+            <img src="nisa99.jpg" alt="My table at my room , college Murni 1">
+            <p>My table at my room , college Murni 1</p>
+        </div>
+        <div class="gallery-item">
+            <img src="nisa8.jpg" alt="My love plushie dolphin - overweight">
+            <p>My love plushie shark - overweight</p>
+        </div>
+
+        <!-- Videos -->
+        <div class="gallery-item">
+            <video controls>
+                <source src="vdnisa1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>RECAP 2023</p>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="vdnisa2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Me</p>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="vdnisa3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Do coding</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 NISA , All Rights Reserved
+    </footer>
+
+    <script>
+        // Detect when footer is in view
+        window.addEventListener('scroll', function () {
+            const footer = document.querySelector('footer');
+            if (footer.getBoundingClientRect().top < window.innerHeight) {
+                footer.classList.add('visible');
+            }
+        });
+    </script>
+
+</body>
+</html>

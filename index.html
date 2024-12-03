@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NISA Website</title>
+    <!-- Include Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Basic styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f7c6d9, #ffecd2);
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a i {
+            margin-right: 5px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff6f61, #56ccf2);
+            padding: 40px 0;
+            border-bottom: 5px solid #56ccf2;
+        }
+
+        h1 {
+            font-size: 45px;
+            color: white;
+            margin: 20px 0 10px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 20px;
+            color: white;
+        }
+
+        /* Main Section */
+        section {
+            padding: 30px;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #34495e;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Notification Box */
+        #welcome-notification {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #ff6f61; /* Soft Pink Color */
+            color: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            font-size: 18px;
+            display: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            font-weight: bold;
+            text-align: center;
+            width: 300px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Clock */
+        #clock {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Fade-in animation for notification */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="biodata.html"><i class="fas fa-user"></i> Biodata</a>
+        <a href="gallery.html"><i class="fas fa-image"></i> Gallery</a>
+        <a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="family.html"><i class="fas fa-users"></i> Family</a>
+        <a href="favoritemovie.html"><i class="fas fa-film"></i> Favorite Movie</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1> NISA WEBSITE</h1>
+        <p>Explore my journey and passions through the navigation above!</p>
+        <div id="clock"></div>
+    </header>
+
+    <!-- Main Section -->
+    <section>
+        <h2>About My Website</h2>
+        <p>This is about Nisa's life. You can know about my life through this website. Enjoy my website! </p>
+        
+        <h3 style="font-family: 'Georgia', serif; font-size: 28px; color: #ff6f61; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); font-style: italic; margin-top: 30px;">A Touch of Rhyme</h3>
+        
+        <p style="font-family: 'Times New Roman', serif; font-size: 20px; line-height: 1.8; color: #34495e; text-align: center; margin-top: 10px;">
+            The river flows, so calm and clear, <br>
+            Whispering tales for those who hear. <br>
+            Welcome, dear friend, to my humble space, <br>
+            Where dreams and stories softly embrace.
+        </p>
+    </section>
+
+    <!-- Notification Box -->
+    <div id="welcome-notification">
+        Hi, Welcome to Nisa's Website!
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 NISA, All Rights Reserved
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Display notification
+        window.onload = function() {
+            setTimeout(function() {
+                const notification = document.getElementById("welcome-notification");
+                notification.style.display = "block";
+                setTimeout(function() {
+                    notification.style.display = "none";
+                }, 10000); 
+            }, 1000);
+        }
+
+        // Update clock
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById("clock").textContent = `Time: ${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+
+</body>
+</html>
